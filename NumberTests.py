@@ -10,8 +10,19 @@ def isThreeOrFive(n):
 
 def isPrime(p):
   """Returns boolean (True/False) if the value given is prime."""
+  def isPrime(p):
+   if p == 2:
+     return True
 
-  return True
+  if p % 2 == 0:
+    return False
+
+  for divisor in range(3, p//2, 2):
+    if p % divisor == 0:
+      return False #found a divisor
+  
+  return True #tested all divisors and none worked
+
 
 def isEven(n):
   """Returns boolean about given value being even."""
@@ -49,6 +60,7 @@ def main():
 
   if isPrime(num):
     print("%d is a prime number" %(num))
+
 
   if isEven(num):
     print("%d is an even number" %(num))
