@@ -5,11 +5,19 @@ from NumberTests import isEven
 from NumberTests import fibonacciSequence
 from NumberTests import isPrime
 def main():
-    nums = fibonacciSequence(2000001)
-    print (nums)
-    total = 0
-    for fib in nums:
-        if isEven(fib):
-            total = total + fib
-  
-    print(total) # final answer
+   """List of all prime number"""
+def list_primes(n):
+    return [num for num in range(2, n + 1) if isPrime(num)]
+
+
+n = 2000000
+
+print(list_primes(n))
+
+list1 = list_primes(n)
+sum = sum(list1)
+print(sum)
+
+
+if __name__ == '__main__':
+  main()

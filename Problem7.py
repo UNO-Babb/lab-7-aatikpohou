@@ -6,21 +6,19 @@ from NumberTests import fibonacciSequence
 from NumberTests import isPrime
 
 def main():
-    nums = isPrime
-    print (nums)
-    
-    """ Find the 10001 prime number"""
-    count = 0
-    num = 3
-
-    while count < 10001:
-       num +=1 
-       if isPrime(num):
-          count +=1
-    return num
+   """List of all prime number"""
+def list_primes(n):
+    return [num for num in range(2, n + 1) if isPrime(num)]
 
 
-    
+n = 150000
+
+ #print(list_primes(n))
+
+list1 = list_primes(n)
+
+print(list1[10001])
+
 
 
 if __name__ == '__main__':
