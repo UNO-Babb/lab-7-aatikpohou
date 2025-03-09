@@ -8,13 +8,13 @@ def  expo (e):
     n = 2
     expo = n ** e
    
-    print(expo)
+    print([expo])
 
 """the sum of the digits"""
-def digits(n):
-    digits = expo 
-    digits_expo = int(digits(expo))
-    sum = digits_expo
+def digits(d):
+    digits = [expo] 
+    digits_expo = int(digits)
+    sum = sum(digits_expo)
 
     print(sum)
 
