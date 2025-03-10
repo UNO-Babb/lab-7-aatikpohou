@@ -9,14 +9,22 @@ def  expo (e):
     expo = n ** e
    
     print([expo])
+    digits(expo)
 
 """the sum of the digits"""
 def digits(d):
-    digits = [expo] 
+    d = str(d)
+    total = 0
+    for digit in d:
+        digit = int(digit)
+        total = total + digit
+    
+    """
+            digits = expo
     digits_expo = int(digits)
-    sum = sum(digits_expo)
+    sum = sum(digits_expo)"""
 
-    print(sum)
+    print(total)
 
 
 if __name__ == '__main__':
