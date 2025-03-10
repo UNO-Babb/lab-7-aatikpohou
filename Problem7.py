@@ -7,17 +7,24 @@ from NumberTests import isPrime
 
 def main():
    """List of all prime number"""
-def list_primes(n):
+   primeCount = 0
+   num = 1
+   while primeCount < 10001:
+      num = num + 1
+      if isPrime(num):
+         primeCount = primeCount + 1
+         print (num)
+"""def list_primes(n): 
     return [num for num in range(2, n + 1) if isPrime(num)]
 
 
-n = 150000
+n = 105000
 
  #print(list_primes(n))
 
 list1 = list_primes(n)
 
-print(list1[10001])
+print(list1[10001])"""
 
 
 
